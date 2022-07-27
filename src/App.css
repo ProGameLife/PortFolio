@@ -1,46 +1,230 @@
-.mainframe {
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  right: 10%;
-  bottom: 10%;
-  width: 80%;
-  height: 80%;
-  background-color: #586065;
+* {
+  box-sizing: border-box;
+  scrollbar-width: thin;
 }
 
-.mainleftbar {
-  position: relative;
-  display: flex;
-  top: 0px;
-  left: 0px;
-  width: 10%;
+.page {
   height: 100%;
-  background-color: #373942;
-}
-
-.profilebox {
-  position: relative;
-  top: 15%;
-  width: 70%;
-  height: 20%;
-  border-radius: 70%;
+  min-height: 100%;
+  padding: 0 100px;
   overflow: hidden;
 }
 
-.profile {
-  position: absolute;
-  align-content: center;
+.page-content {  
+  display: flex;
+  flex-direction: row;
   width: 100%;
-  height: 100%;
-  object-fit:cover;
+  max-width: 1280px;
+  min-height: 80vh;
+  margin: 10vh auto;
+  padding: 0;
+  border-radius: 20px;
+  background-color: #586065;
 }
 
-.profilebar {
-  position: absolute;
-  left: 5%;
-  background-color: #515257;
-  width: 15%;
-  top: 0px;
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 380px;
   height: 100%;
+  max-height: 80vh;
+  min-height: inherit;
+  text-align: center;
+  padding: 30px 30px 45px;
+  overflow: auto;
+  background-color: #373942;
+}
+
+.header-title{
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  color: #fffEEE;
+  margin-top: 10px;
+  font-family: 'Poppins', Helvetica, sans-serif;
+}
+
+.header-photo {
+  display: flex;
+  width: 180px;
+  height: 180px;
+  margin: 70px auto 30px;
+  z-index: 1;
+}
+
+.header-photo > img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border: 3px solid #fff;
+  border-radius: 300px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.header-social {
+  display: flex;
+  width: 100%;
+  height: inherit;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.header-social > ul {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  padding: 0;
+}
+
+.header-social > ul > li{
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+}
+
+.value {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.65em;
+  color: #fffEEE;
+  font-family: 'Poppins', Helvetica, sans-serif;
+}
+
+
+.header-img-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-img {
+  width: 25px;
+  height: 25px;
+  margin: 20px 20px 20px;
+}
+
+.content-area {
+  right: 0;
+  background-color: #515257;
+  height: 100%;
+  min-height: inherit;
+  max-height: 80vh;
+  width: 100%;
+}
+
+.title-area {
+  display: flex;
+  justify-content: center;
+  padding: 30px 30px;
+}
+
+.logo-area {
+  padding-left: 50px;
+  width: 20%;
+  border-radius: 300px;
+}
+
+.logo-area > img {
+  width: 100%;
+  height: 100%;
+}
+
+.company-area {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+}
+
+.value-area {
+  padding-left: 150px;
+}
+
+.menu-title {
+  font-size: 40px;
+}
+
+.content-area > div > ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 30px 50px;
+  border-style: outset;
+  border-top: 1px;
+  border-right: 1px;
+  border-left: 1px;
+  border-bottom: 1px solid;
+  padding: 20px 30px 20px 18px; 
+  margin: 0px 0px 0px 0px;
+  /* box-shadow: inset 2px 2px #000; */
+}
+
+.content-area > div > ul > li {
+  display: flex;
+  margin-left: 30px;
+}
+
+.value-area > p > ul {
+  padding-left: 18px;
+}
+
+.project-content-area {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 45vh;
+  background-color: #586065;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.project-name {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-area {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.img-box {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.img-box > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  object-fit: fill;
+}
+
+.project-text-area {
+  word-wrap: break-all;
+}
+
+.Project-content-box {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  padding-top: 0px;
+  overflow: auto;
+}
+div {
+  display: block;
+  overflow: hidden scroll;
 }
