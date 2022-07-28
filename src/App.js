@@ -55,16 +55,22 @@ function App() {
           </div>
           <div className='skill-area'>
             <div className='title-area'>
-              <span id='skills' className='menu-title'>Skills</span>
+              <span id='skills' className='menu-title'>SKILLS</span>
             </div>
-            <div>
-              <img src={img_frontend}/>
-              <img src={img_backend}/>
+            <div className='skillsl-area'>
+              <div className='frontend-area'>
+                <div className='skill-title'>Frontend</div>
+                <img src={img_frontend}/>
+              </div>
+              <div className='backend-area'>
+                <div className='skill-title'>Backtend</div>
+                <img src={img_backend}/>
+              </div>
             </div>
           </div>
           <div className='project-area'>
             <div className='title-area'>
-              <span id='projects' className='menu-title'>Projects</span>
+              <span id='projects' className='menu-title'>PROJECTS</span>
             </div>
             <div className='project-content-area'>
               <div className='project-name'>
@@ -143,7 +149,7 @@ function App() {
           </div>
           <div className='career-area'>
             <div className='title-area'>
-              <span id='career' className='menu-title'>Career</span>
+              <span id='career' className='menu-title'>CAREER</span>
             </div>
             <div className='career-colum'>
               <div className='company-area'>
