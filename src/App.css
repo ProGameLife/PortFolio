@@ -3,6 +3,14 @@
   scrollbar-width: thin;
 }
 
+span, h1, b, div {
+  color: #fff;
+}
+
+#root {
+  background-color: #3a424f;
+}
+
 .page {
   height: 100%;
   min-height: 100%;
@@ -20,6 +28,8 @@
   padding: 0;
   border-radius: 20px;
   background-color: #586065;
+  -webkit-box-shadow: 0px 7px 23px 3px #333;
+  box-shadow: 0px 7px 23px 3px #333;
 }
 
 .header {
@@ -147,6 +157,8 @@
 
 .menu-title {
   font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 0.13rem;
 }
 
 .content-area > div > ul {
@@ -159,7 +171,7 @@
   border-top: 1px;
   border-right: 1px;
   border-left: 1px;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #888;
   padding: 20px 30px 20px 18px; 
   margin: 0px 0px 0px 0px;
   /* box-shadow: inset 2px 2px #000; */
@@ -168,6 +180,11 @@
 .content-area > div > ul > li {
   display: flex;
   margin-left: 30px;
+}
+
+.content-area > div > ul > li > a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .value-area > p > ul {

@@ -18,16 +18,13 @@ function App() {
       <div className='page-content'>
         <header className='header'>
           <div>
-            <p className='header-title'>JSW's Protfolio</p>
+            <p className='header-title'>Sunuk Jung</p>
           </div>
           <div className='header-photo'>
             <img src={imgA} />
           </div>
           <div className='header-social'>
             <ul>
-              <li>
-                <p className='value'> 정 선 욱</p>
-              </li>
               <li>
                 <p className='value'>980823</p>
               </li>
