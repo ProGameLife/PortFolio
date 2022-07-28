@@ -48,14 +48,23 @@ function App() {
         <div className='content-area'>
           <div>
             <ul>
+              <li><a href='#aboutme'>About me</a></li>
               <li><a href='#skills'>Skills</a></li>
               <li><a href='#projects'>Projects</a></li>
               <li><a href='#career'>Career</a></li>
             </ul>
           </div>
-          <div className='skill-area'>
+          <div id='about' className='about-area'>
             <div className='title-area'>
-              <span id='skills' className='menu-title'>SKILLS</span>
+              <span className='menu-title'>ABOUT ME</span>
+            </div>
+            <div className=''>
+
+            </div>
+          </div>
+          <div id='skills' className='skill-area'>
+            <div className='title-area'>
+              <span className='menu-title'>SKILLS</span>
             </div>
             <div className='skillsl-area'>
               <div className='frontend-area'>
@@ -68,9 +77,9 @@ function App() {
               </div>
             </div>
           </div>
-          <div className='project-area'>
+          <div id='projects' className='project-area'>
             <div className='title-area'>
-              <span id='projects' className='menu-title'>PROJECTS</span>
+              <span className='menu-title'>PROJECTS</span>
             </div>
             <div className='project-content-area'>
               <div className='project-name'>
@@ -147,9 +156,9 @@ function App() {
               </div>
             </div> 
           </div>
-          <div className='career-area'>
+          <div id='career' className='career-area'>
             <div className='title-area'>
-              <span id='career' className='menu-title'>CAREER</span>
+              <span className='menu-title'>CAREER</span>
             </div>
             <div className='career-colum'>
               <div className='company-area'>
