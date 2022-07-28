@@ -66,11 +66,11 @@ function App() {
             <div className='skillsl-area'>
               <div className='frontend-area'>
                 <div className='skill-title'>Frontend</div>
-                <img src={img_frontend}/>
+                <img alt='frontend' src={img_frontend}/>
               </div>
               <div className='backend-area'>
                 <div className='skill-title'>Backtend</div>
-                <img src={img_backend}/>
+                <img alt='backend' src={img_backend}/>
               </div>
             </div>
           </div>
@@ -84,7 +84,7 @@ function App() {
                 </div>
               <div className='Project-content-box'>
                 <div className='img-box'>
-                  <img src={img_kiri_1}/>
+                  <img alt='kiri-1' src={img_kiri_1}/>
                 </div>
                 <div className='project-text-area'>
                   <b>보고싶은 유튜브의 새 영상을 평소에 자주 사용하는 메신저인 Discord를 통해서
@@ -105,7 +105,7 @@ function App() {
                 </div>
               <div className='Project-content-box'>
                 <div className='img-box'>
-                  <img src={img_croll_1}/>
+                  <img alt='croll-1' src={img_croll_1}/>
                 </div>
                 <div className='project-text-area'>
                   <b>네이버 카페의 새로운 글을 크롤링 하여 자주 사용하는 메신저인 Discord를 통해서
