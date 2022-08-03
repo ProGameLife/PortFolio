@@ -3,12 +3,18 @@ import imgB from './images/git.png'
 import imgC from './images/email.png'
 import imgD from './images/pd.png'
 import img_kiri_1 from './images/kiribot-1.png'
+import img_kiri_2 from './images/kiribot-2.png'
+import img_kiri_3 from './images/kiribot-3.png'
 import img_alrim_1 from './images/alrimbot-1.png'
 import img_croll_1 from './images/crollbot-1.png'
 import img_trbot_1 from './images/trbot-1.png'
+import img_trbot_2 from './images/trbot-2.png'
+import img_trbot_3 from './images/trbot-3.png'
+import img_trbot_4 from './images/trbot-4.png'
 import img_frontend from './images/frontend.png'
 import img_backend from './images/backend.png'
-
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 import './App.css';
 
@@ -19,6 +25,7 @@ function App() {
         <header className='header'>
           <div>
             <p className='header-title'>Sunuk Jung</p>
+            <h4>Backtend Developer</h4>
           </div>
           <div className='header-photo'>
             <img src={imgA} />
@@ -30,6 +37,9 @@ function App() {
               </li>
               <li>
                 <p className='value'>+82 10 4022 1359</p>
+              </li>
+              <li>
+                <p className='value'>ISFP</p>
               </li>
             </ul>
             <div className='header-img-link'>
@@ -43,27 +53,38 @@ function App() {
           </div>
         </header>
         <div className='content-area'>
-          <div>
-            <ul>
-              <li><a href='#aboutme'>About me</a></li>
-              <li><a href='#skills'>Skills</a></li>
-              <li><a href='#projects'>Projects</a></li>
-              <li><a href='#career'>Career</a></li>
-            </ul>
-          </div>
-          <div id='about' className='about-area'>
-            <div className='title-area'>
-              <span className='menu-title'>ABOUT ME</span>
+          <ul className='main-menu'>
+            <li><a href='#aboutme'>About me</a></li>
+            <li><a href='#skills'>Skills</a></li>
+            <li><a href='#projects'>Projects</a></li>
+            <li><a href='#career'>Career</a></li>
+          </ul>
+          <div id='aboutme' className='about-area'>
+            <div className='main-title-area'>
+              <p className='main-menu-title'>- 정 선 욱 -</p>
+              <br />
+              <p className='main-menu-title'>Backend 개발자 포트폴리오</p>
             </div>
-            <div className=''>
-
+            <div className='aboutme-center'>
+              안녕하세요, 세상을 편하게 살기위해 노력하는 개발자 정선욱입니다.<br />
+              저는 평소에 백엔드 개발을 진행하였으며 Node.js와 TypeScript를
+              주로 다루었습니다.<br />
+              해당 포트폴리오 페이지는 저의 소개글이자, 개인 프로젝트 등 개발일지를<br />
+              기록하기 위해 만들어진 저의 첫 웹페이지 입니다.<br />
+              저에게 궁금하신 사항은 언제든지 연락 부탁드립니다.<br />
+              감사합니다 !<br />
             </div>
+            <a href='#skills' className='more-view-button'>
+              <div className='more-view-button-area'>
+                더 알아보기 ↓
+              </div>
+            </a>
           </div>
           <div id='skills' className='skill-area'>
             <div className='title-area'>
               <span className='menu-title'>SKILLS</span>
             </div>
-            <div className='skillsl-area'>
+            <div className='skills-area'>
               <div className='frontend-area'>
                 <div className='skill-title'>Frontend</div>
                 <img alt='frontend' src={img_frontend}/>
@@ -84,28 +105,59 @@ function App() {
                 </div>
               <div className='Project-content-box'>
                 <div className='img-box'>
-                  <img alt='kiri-1' src={img_kiri_1}/>
+                  <Carousel 
+                    showArrows={true} 
+                    showThumbs={false} 
+                    autoPlay={true} 
+                    showStatus={false} 
+                    swipeable={false} 
+                    infiniteLoop={true} >
+                    <div>
+                        <img src={img_kiri_1} />
+                    </div>
+                    <div>
+                        <img src={img_kiri_2} />
+                    </div>
+                    <div>
+                        <img src={img_kiri_3} />
+                    </div>              
+                  </Carousel>
                 </div>
                 <div className='project-text-area'>
-                  <b>보고싶은 유튜브의 새 영상을 평소에 자주 사용하는 메신저인 Discord를 통해서
-                  알림을 받을 수 있고 바로 영상재생이 가능하게 해주는 봇입니다.</b> 데이터베이스를
-                  활용하여 자신이 보고싶은 유튜브 채널을 추가 / 삭제가 가능하게 만들었으며
-                  지인들과 함께 쓰기위해 개발을 하게 되었습니다.
-                  <p></p>
-                  TypeScript를 사용하여 개발을 진행하였으며, 기존에 node.js만 사용했던
-                  프로젝트 보다 오류가 확연히 줄어드는 것을 느낄 수 있었으며, Prisma와
-                  PostgreSql을 사용하며 데이터베이스에 대한 지식 또한 더욱 탄탄해지는
-                  경험을 쌓을 수 있었습니다.
+                  <div className='project-text-box'>
+                    <b>보고싶은 유튜브의 새 영상을 평소에 자주 사용하는 메신저인 Discord를 통해서
+                    알림을 받을 수 있고 바로 영상재생이 가능하게 해주는 봇입니다.</b> 데이터베이스를
+                    활용하여 자신이 보고싶은 유튜브 채널을 추가 / 삭제가 가능하게 만들었으며
+                    지인들과 함께 쓰기위해 개발을 하게 되었습니다.
+                    <p></p>
+                    TypeScript를 사용하여 개발을 진행하였으며, 기존에 node.js만 사용했던
+                    프로젝트 보다 오류가 확연히 줄어드는 것을 느낄 수 있었으며, Prisma와
+                    PostgreSql을 사용하며 데이터베이스에 대한 지식 또한 더욱 탄탄해지는
+                    경험을 쌓을 수 있었습니다.
+                  </div>
+                  <div className='project-function-area'>
+                    <ul className='project-function'>
+                      <li className='function-option'><b>주요기능</b></li>
+                    </ul>
+                    <div>
+                      텍스트 뭐시깽이 뭐식깽
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div> 
+            </div>
             <div className='project-content-area'>
               <div className='project-name'>
                   <h1>크롤봇</h1>
                 </div>
               <div className='Project-content-box'>
                 <div className='img-box'>
-                  <img alt='croll-1' src={img_croll_1}/>
+                  <Carousel showArrows={true} showThumbs={false} autoPlay={true} showStatus={false} swipeable={false} infiniteLoop={true} >
+                    <div>
+                        <img src={img_croll_1} />
+                    </div>
+                              
+                  </Carousel>
                 </div>
                 <div className='project-text-area'>
                   <b>네이버 카페의 새로운 글을 크롤링 하여 자주 사용하는 메신저인 Discord를 통해서
@@ -117,30 +169,31 @@ function App() {
                   빠른 속도로 크롤링을 할 수 있어서 좋은 경험이 되었습니다.
                 </div>
               </div>
-            </div> 
-            <div className='project-content-area'>
-              <div className='project-name'>
-                  <h1>알리봇</h1>
-                </div>
-              <div className='Project-content-box'>
-                <div className='img-box'>
-                  <img src={img_alrim_1}/>
-                </div>
-                <div className='project-text-area'>
-                  <b>트위치라는 방송 플렛폼의 방송알림을 Discord 메신저에 올 수 있도록 하는 봇입니다.</b>
-                  기존에 방송알림을 해주는 Discord 봇이 있었으나 유로화로 바뀌면서 직접 개발하게 되었습니다.
-                  <p></p>
-                  Python과 트위치API를 사용하여 개발을 진행하였습니다. 
-                </div>
-              </div>
-            </div> 
+            </div>
             <div className='project-content-area'>
               <div className='project-name'>
                   <h1>티알봇</h1>
                 </div>
               <div className='Project-content-box'>
                 <div className='img-box'>
-                  <img src={img_trbot_1}/>
+                  <Carousel 
+                    showArrows={true} 
+                    showThumbs={false} 
+                    autoPlay={true} 
+                    showStatus={false} 
+                    swipeable={false} 
+                    infiniteLoop={true}
+                    autoFocus={true} >
+                    <div>
+                        <img className='project-img' src={img_trbot_1} />
+                    </div>
+                    <div>
+                        <img className='project-img' src={img_trbot_2} />
+                    </div>
+                    <div>
+                        <img className='project-img' src={img_trbot_3} />
+                    </div>         
+                  </Carousel>
                 </div>
                 <div className='project-text-area'>
                   <b>TRPG(TableRollPlayingGame)을 Discord메신저에서 할 수 있도록
@@ -151,23 +204,49 @@ function App() {
                   명령어를 구현해야 하다보니 소스 최적화에 대한 좋은 경험이 된 것 같습니다.
                 </div>
               </div>
-            </div> 
+            </div>
+            <div className='project-content-area'>
+              <div className='project-name'>
+                  <h1>알리봇</h1>
+                </div>
+              <div className='Project-content-box'>
+                <div className='img-box'>
+                <Carousel 
+                    showArrows={true} 
+                    showThumbs={false} 
+                    autoPlay={true} 
+                    showStatus={false} 
+                    swipeable={false} 
+                    infiniteLoop={true}
+                    autoFocus={true} >
+                    <div>
+                        <img className='project-img' src={img_alrim_1} />
+                    </div>
+                  </Carousel>
+                </div>
+                <div className='project-text-area'>
+                  <b>트위치라는 방송 플렛폼의 방송알림을 Discord 메신저에 올 수 있도록 하는 봇입니다.</b>
+                  기존에 방송알림을 해주는 Discord 봇이 있었으나 유로화로 바뀌면서 직접 개발하게 되었습니다.
+                  <p></p>
+                  Python과 트위치API를 사용하여 개발을 진행하였습니다. 
+                </div>
+              </div>
+            </div>  
           </div>
           <div id='career' className='career-area'>
-            <div className='title-area'>
+            <div className='title-area-career'>
               <span className='menu-title'>CAREER</span>
             </div>
             <div className='career-colum'>
               <div className='company-area'>
                 <div className='logo-area'>
-                  <img src={imgD} />
+                  {/* <img src={imgD} /> */}
                 </div>
                 <div className='value-area'>
-                  <p>알앤비랩</p>
-                  <br />
+                  <h2>(주) 알앤비랩</h2>
                   <p>2016.11~2018.2</p>
                   <br />
-                  <p>
+                  <p className='company-explanation'>
                     기업에 제공하는 기업형 솔루션을 개발, 유지보수, 구축 하는 기업입니다.
                     <br />
                     기술 엔지니어로 채용되어 솔루션 유지보수, 구축을 담당하였습니다.
@@ -183,11 +262,10 @@ function App() {
                   <img src={imgD} />
                 </div>
                 <div className='value-area'>
-                  <p>피디정보통신</p>
-                  <br />
+                  <h2>(주) 피디정보통신</h2>
                   <p>2018.2~2020.6</p>
                   <br />
-                  <p>
+                  <p className='company-explanation'>
                     보안관제 및 기업에 제공하는 기업형 솔루션 개발, 유지보수, 구축 하는 기업입니다.
                     <br />
                     기술 엔지니어로 채용 되어 동일하게 솔루션 유지보수, 구축을 담당하였으며
@@ -195,8 +273,11 @@ function App() {
                     추가로 고객사 미팅, 솔루션 담당자 교육, 신입 및 개발 엔지니어의 사수 역할 등의
                     <br />
                     기타 업무까지 함께 하였습니다.
+                  </p>
+                  <p>
                     <br /><br />
-                    |솔루션 유지보수
+                    <li className='career-s-title'><b>솔루션 유지보수</b></li>
+                    <br />
                     <ul>
                       <li>고객사 요청에 따른 소스의 커스터마이징</li>
                       <li>솔루션 장애지원</li>
@@ -205,7 +286,7 @@ function App() {
                       <li>관리자 교육</li>
                     </ul>
                     <br /><br />
-                    |솔루션 구축
+                    <li className='career-s-title'><b>솔루션 구축</b></li>
                     <br />
                     <ul>
                       <li>아파치 톰캣, 각종 DB를 활용하여 서비스 구축</li>
@@ -213,8 +294,8 @@ function App() {
                       <li>솔루션 망연계 연동 진행</li>
                       <li>고객 요청에 따른 커스터마이징 진행</li>
                     </ul>
-                    <br />
-                    |기타 업무
+                    <br /><br />
+                    <li className='career-s-title'><b>기타 업무</b></li>
                     <br />
                     <ul>
                       <li>고객사 별 인수인계 자료 작성</li>
