@@ -240,7 +240,7 @@ div, span, h1, h2, b, p{
   display: flex;
   flex-direction: column;
   width: 90%;
-  height: 45vh;
+  height: 50vh;
   background-color: #586065;
   border-radius: 20px;
   margin-bottom: 20px;
@@ -333,6 +333,7 @@ div, span, h1, h2, b, p{
   padding-top: 0px;
   padding-bottom: 0px;
   overflow: auto;
+  align-items: center;
 }
 
 .skills-area {
