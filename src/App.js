@@ -15,6 +15,9 @@ import img_frontend from './images/frontend.png'
 import img_backend from './images/backend.png'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import styled from 'styled-components'
+import { color } from 'styled-system'
+import { HiOutlineChevronDoubleDown } from "react-icons/hi";
 
 import './App.css';
 
@@ -61,23 +64,20 @@ function App() {
           </ul>
           <div id='aboutme' className='about-area'>
             <div className='main-title-area'>
-              <p className='main-menu-title'>- 정 선 욱 -</p>
+              <p className='main-menu-title'>세상을 편하게 살기위해 노력하는 개발자</p>
               <br />
-              <p className='main-menu-title'>Backend 개발자 포트폴리오</p>
+              <p className='main-menu-sub-title'>Backend 개발자 포트폴리오</p>
             </div>
-            <div className='aboutme-center'>
-              안녕하세요, 세상을 편하게 살기위해 노력하는 개발자 정선욱입니다.<br />
+            {/* <div className='aboutme-center'>
               저는 평소에 백엔드 개발을 진행하였으며 Node.js와 TypeScript를
               주로 다루었습니다.<br />
               해당 포트폴리오 페이지는 저의 소개글이자, 개인 프로젝트 등 개발일지를<br />
-              기록하기 위해 만들어진 저의 첫 웹페이지 입니다.<br />
+              기록하기 위해 만들어진 저의 웹페이지 입니다.<br />
               저에게 궁금하신 사항은 언제든지 연락 부탁드립니다.<br />
               감사합니다 !<br />
-            </div>
+            </div> */}
             <a href='#skills' className='more-view-button'>
-              <div className='more-view-button-area'>
-                더 알아보기 ↓
-              </div>
+              <HiOutlineChevronDoubleDown size={50} color='#fff'/>
             </a>
           </div>
           <div id='skills' className='skill-area'>
@@ -397,32 +397,21 @@ function App() {
             </div>
             <div className='career-colum'>
               <div className='company-area'>
-                <div className='logo-area'>
-                  {/* <img src={imgD} /> */}
-                </div>
                 <div className='value-area'>
                   <h2>(주) 알앤비랩</h2>
                   <p>2016.11~2018.2</p>
-                  <br />
                   <p className='company-explanation'>
                     기업에 제공하는 기업형 솔루션을 개발, 유지보수, 구축 하는 기업입니다.
                     <br />
-                    기술 엔지니어로 채용되어 솔루션 유지보수, 구축을 담당하였습니다.
                     <br />
-                    서버 유지보수, 솔루션 배포, 각종 프론트, 백엔드 개발 유지보수를
-                    <br />
-                    진행하며 솔루션 엔지니어링에 필요한 역량을 키웠습니다.
+                    추후 <b>"피디정보통신" </b>으로 인수합병 되었습니다.
                   </p>
                 </div>
               </div>
               <div className='company-area'>
-                <div className='logo-area'>
-                  <img src={imgD} />
-                </div>
                 <div className='value-area'>
                   <h2>(주) 피디정보통신</h2>
                   <p>2018.2~2020.6</p>
-                  <br />
                   <p className='company-explanation'>
                     보안관제 및 기업에 제공하는 기업형 솔루션 개발, 유지보수, 구축 하는 기업입니다.
                     <br />
@@ -433,7 +422,7 @@ function App() {
                     기타 업무까지 함께 하였습니다.
                   </p>
                   <p>
-                    <br /><br />
+                    <br />
                     <li className='career-s-title'><b>솔루션 유지보수</b></li>
                     <br />
                     <ul>
