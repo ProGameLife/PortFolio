@@ -1,7 +1,6 @@
 import imgA from './images/2.jpg'
 import imgB from './images/git.png'
 import imgC from './images/email.png'
-import imgD from './images/pd.png'
 import img_kiri_1 from './images/kiribot-1.png'
 import img_kiri_2 from './images/kiribot-2.png'
 import img_kiri_3 from './images/kiribot-3.png'
@@ -10,16 +9,29 @@ import img_croll_1 from './images/crollbot-1.png'
 import img_trbot_1 from './images/trbot-1.png'
 import img_trbot_2 from './images/trbot-2.png'
 import img_trbot_3 from './images/trbot-3.png'
-import img_trbot_4 from './images/trbot-4.png'
 import img_frontend from './images/frontend.png'
 import img_backend from './images/backend.png'
+
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import styled from 'styled-components'
-import { color } from 'styled-system'
 import { HiOutlineChevronDoubleDown } from "react-icons/hi";
 
+import styled from 'styled-components'
+import { flexDirection, space } from 'styled-system'
+
 import './App.css';
+
+const ProjectContentBox = styled.div`
+  ${flexDirection}
+`;
+
+const ProjectTextArea = styled.div`
+  ${space}
+`;
+
+const SkillsArea = styled.div`
+  ${flexDirection}
+`;
 
 function App() {
   return (
@@ -77,14 +89,17 @@ function App() {
               감사합니다 !<br />
             </div> */}
             <a href='#skills' className='more-view-button'>
-              <HiOutlineChevronDoubleDown size={50} color='#fff'/>
+              <HiOutlineChevronDoubleDown size={46} color={'#fff'}/>
             </a>
           </div>
           <div id='skills' className='skill-area'>
             <div className='title-area'>
               <span className='menu-title'>SKILLS</span>
             </div>
-            <div className='skills-area'>
+            <SkillsArea 
+              className='skills-area' 
+              flexDirection={['column', 'column', 'column', 'row']}
+            >
               <div className='frontend-area'>
                 <div className='skill-title'>Frontend</div>
                 <img alt='frontend' src={img_frontend}/>
@@ -93,7 +108,7 @@ function App() {
                 <div className='skill-title'>Backtend</div>
                 <img alt='backend' src={img_backend}/>
               </div>
-            </div>
+            </SkillsArea>
           </div>
           <div id='projects' className='project-area'>
             <div className='title-area'>
@@ -102,8 +117,10 @@ function App() {
             <div className='project-content-area'>
               <div className='project-name'>
                   <h1>키리봇</h1>
-                </div>
-              <div className='Project-content-box'>
+              </div>
+              <ProjectContentBox 
+                className='project-content-box' 
+                flexDirection={['column', 'column', 'column', 'row']}>
                 <div className='img-box'>
                   <Carousel 
                     showArrows={true} 
@@ -123,7 +140,9 @@ function App() {
                     </div>              
                   </Carousel>
                 </div>
-                <div className='project-text-area'>
+                <ProjectTextArea 
+                  className='project-text-area'
+                  mt={[32, 32, 32, 0]}>
                   <div className='project-text-box'>
                     <b>보고싶은 유튜브의 새 영상을 평소에 자주 사용하는 메신저인 Discord를 통해서
                     알림을 받을 수 있고 바로 영상재생이 가능하게 해주는 봇입니다.</b> 데이터베이스를
@@ -177,14 +196,16 @@ function App() {
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
+                </ProjectTextArea>
+              </ProjectContentBox>
             </div>
             <div className='project-content-area'>
               <div className='project-name'>
                   <h1>크롤봇</h1>
-                </div>
-              <div className='Project-content-box'>
+              </div>
+              <ProjectContentBox 
+                className='project-content-box'
+                flexDirection={['column', 'column', 'column', 'row']}>
                 <div className='img-box'>
                   <Carousel 
                     showArrows={true} 
@@ -198,7 +219,9 @@ function App() {
                     </div>
                   </Carousel>
                 </div>
-                <div className='project-text-area'>
+                <ProjectTextArea 
+                  className='project-text-area'
+                  mt={[32, 32, 32, 0]}>
                   <div className='project-text-box'>
                     <b>네이버 카페의 새로운 글을 크롤링 하여 자주 사용하는 메신저인 Discord를 통해서
                     알림을 받을 수 있고 해당 글 바로가기 및 영상이 있는경우 영상까지 바로 재생 할 수
@@ -242,14 +265,16 @@ function App() {
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
+                </ProjectTextArea>
+              </ProjectContentBox>
             </div>
             <div className='project-content-area'>
               <div className='project-name'>
                   <h1>티알봇</h1>
                 </div>
-              <div className='Project-content-box'>
+              <ProjectContentBox 
+                className='project-content-box'
+                flexDirection={['column', 'column', 'column', 'row']}>
                 <div className='img-box'>
                   <Carousel 
                     showArrows={true} 
@@ -270,7 +295,9 @@ function App() {
                     </div>         
                   </Carousel>
                 </div>
-                <div className='project-text-area'>
+                <ProjectTextArea 
+                  className='project-text-area'
+                  mt={[32, 32, 32, 0]}>
                   <div className='project-text-box'>
                     <b>TRPG(TableRollPlayingGame)을 Discord메신저에서 할 수 있도록
                     각종 명령어와 탐사자 시트 및 주사위 기능을 구현하여 통화를 진행하면서
@@ -321,29 +348,33 @@ function App() {
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
+                </ProjectTextArea>
+              </ProjectContentBox>
             </div>
             <div className='project-content-area'>
               <div className='project-name'>
                   <h1>알리봇</h1>
                 </div>
-              <div className='Project-content-box'>
+              <ProjectContentBox 
+                className='project-content-box'
+                flexDirection={['column', 'column', 'column', 'row']}>
                 <div className='img-box'>
-                <Carousel 
+                  <Carousel 
                     showArrows={true} 
                     showThumbs={false} 
                     autoPlay={true} 
                     showStatus={false} 
                     swipeable={false} 
                     infiniteLoop={true}
-                    autoFocus={true} >
+                    autoFocus={true}>
                     <div>
                         <img className='project-img' src={img_alrim_1} />
                     </div>
                   </Carousel>
                 </div>
-                <div className='project-text-area'>
+                <ProjectTextArea 
+                  className='project-text-area'
+                  mt={[32, 32, 32, 0]}>
                   <div className='project-text-box'>
                     <b>트위치라는 방송 플렛폼의 방송알림을 Discord 메신저로 받을 수 있도록 하는 봇입니다.</b>
                     기존에 방송알림을 해주는 Discord 봇이 있었으나 유로화로 바뀌면서 직접 개발하게 되었습니다.
@@ -387,8 +418,8 @@ function App() {
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
+                </ProjectTextArea>
+              </ProjectContentBox>
             </div>  
           </div>
           <div id='career' className='career-area'>

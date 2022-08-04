@@ -341,7 +341,7 @@ div, span, h1, h2, b, p{
   list-style: disclosure-closed;
 }
 
-.Project-content-box {
+.project-content-box {
   display: flex;
   flex-direction: row;
   padding: 30px;
@@ -406,17 +406,11 @@ div, span, h1, h2, b, p{
   margin-bottom: 100px;
 }
 
-.more-view-button-area {
-  display: inline-block;
-  border: none;
-  align-self: center;
-  padding: 20px;
-  cursor: pointer;
-}
 
 .more-view-button {
   text-decoration: none;
   align-self: center;
+  
 }
 
 
