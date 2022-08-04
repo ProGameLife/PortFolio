@@ -292,13 +292,36 @@ div, span, h1, h2, b, p{
   margin-right: 1rem;
 }
 
-.project-function-area {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.project-description {
+  display: block;
+  margin-bottom: 1rem;
 }
 
+.project-description-deployment {
+  display: block;
+}
+
+.project-function-title {
+  display: inline-block;
+  vertical-align: top;
+  width: 7.8rem;
+  height: 2rem;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.project-function-value {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 7.8rem);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+
 .project-function {
+  display: flex;
+  flex-direction: row;
   padding-left: 0;
   list-style: disclosure-closed;
 }
@@ -308,6 +331,7 @@ div, span, h1, h2, b, p{
   flex-direction: row;
   padding: 30px;
   padding-top: 0px;
+  padding-bottom: 0px;
   overflow: auto;
 }
 

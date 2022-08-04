@@ -136,11 +136,45 @@ function App() {
                     경험을 쌓을 수 있었습니다.
                   </div>
                   <div className='project-function-area'>
-                    <ul className='project-function'>
-                      <li className='function-option'><b>주요기능</b></li>
-                    </ul>
-                    <div>
-                      텍스트 뭐시깽이 뭐식깽
+                    <div className='project-description'>
+                      <div className='project-function-title'>
+                      ✔ 주요 기능
+                      </div>
+                      <div className='project-function-value'>
+                        명령어를 통해 원하는 채널 등록 ∙ 삭제 ∙ 수정 가능
+                      </div>
+                    </div>
+                    <div className='project-description'>
+                      <div className='project-function-title'>
+                      ✔ Backend
+                      </div>
+                      <div className='project-function-value'>
+                        Node.js, prisma
+                      </div>
+                    </div>
+                    <div className='project-description'>
+                      <div className='project-function-title'>
+                      ✔ Frontend
+                      </div>
+                      <div className='project-function-value'>
+                        TypeScript, discord.js
+                      </div>
+                    </div>
+                    <div className='project-description'>
+                      <div className='project-function-title'>
+                      ✔ Database
+                      </div>
+                      <div className='project-function-value'>
+                        PostgreSql
+                      </div>
+                    </div>
+                    <div className='project-description-deployment'>
+                      <div className='project-function-title'>
+                      ✔ Deployment
+                      </div>
+                      <div className='project-function-value'>
+                        Heroku
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -152,21 +186,62 @@ function App() {
                 </div>
               <div className='Project-content-box'>
                 <div className='img-box'>
-                  <Carousel showArrows={true} showThumbs={false} autoPlay={true} showStatus={false} swipeable={false} infiniteLoop={true} >
+                  <Carousel 
+                    showArrows={true} 
+                    showThumbs={false} 
+                    autoPlay={true} 
+                    showStatus={false} 
+                    swipeable={false} 
+                    infiniteLoop={true} >
                     <div>
                         <img src={img_croll_1} />
                     </div>
-                              
                   </Carousel>
                 </div>
                 <div className='project-text-area'>
-                  <b>네이버 카페의 새로운 글을 크롤링 하여 자주 사용하는 메신저인 Discord를 통해서
-                  알림을 받을 수 있고 해당 글 바로가기 및 영상이 있는경우 영상까지 바로 재생 할 수
-                  있도록 해주는 봇입니다.</b> 매번 카페에 들어가서 확인하는것이 번거로웠기 때문에
-                  개발하게 되었습니다.
-                  <p></p>
-                  Pupeteer와 Node.js를 사용하여 크롤링을 구현하였습니다. 상세한 페이지 컨트롤과
-                  빠른 속도로 크롤링을 할 수 있어서 좋은 경험이 되었습니다.
+                  <div className='project-text-box'>
+                    <b>네이버 카페의 새로운 글을 크롤링 하여 자주 사용하는 메신저인 Discord를 통해서
+                    알림을 받을 수 있고 해당 글 바로가기 및 영상이 있는경우 영상까지 바로 재생 할 수
+                    있도록 해주는 봇입니다.</b> 매번 카페에 들어가서 확인하는것이 번거로웠기 때문에
+                    개발하게 되었습니다.
+                    <p></p>
+                    Pupeteer와 Node.js를 사용하여 크롤링을 구현하였습니다. 상세한 페이지 컨트롤과
+                    빠른 속도로 크롤링을 할 수 있어서 좋은 경험이 되었습니다.
+                  </div>
+                  <div className='project-function-area'>
+                    <div className='project-description'>
+                      <div className='project-function-title'>
+                      ✔ 주요 기능
+                      </div>
+                      <div className='project-function-value'>
+                        네이버 카페에 새글이 올라오면 자동 크롤링 하여 출력
+                      </div>
+                    </div>
+                    <div className='project-description'>
+                      <div className='project-function-title'>
+                      ✔ Backend
+                      </div>
+                      <div className='project-function-value'>
+                        Node.js
+                      </div>
+                    </div>
+                    <div className='project-description'>
+                      <div className='project-function-title'>
+                      ✔ Frontend
+                      </div>
+                      <div className='project-function-value'>
+                        Pupeteer, discord.js
+                      </div>
+                    </div>
+                    <div className='project-description'>
+                      <div className='project-function-title'>
+                      ✔ Deployment
+                      </div>
+                      <div className='project-function-value'>
+                        Heroku
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -196,12 +271,56 @@ function App() {
                   </Carousel>
                 </div>
                 <div className='project-text-area'>
-                  <b>TRPG(TableRollPlayingGame)을 Discord메신저에서 할 수 있도록
-                  각종 명령어와 탐사자 시트 및 주사위 기능을 구현하여 통화를 진행하면서
-                  게임을 할 수도 있고 채팅으로도 게임 진행이 가능하게 개발하였습니다</b>
-                  <p></p>
-                  TypeScript와 Prisma, Postgresql을 사용하여 개발을 진행하였으며,
-                  명령어를 구현해야 하다보니 소스 최적화에 대한 좋은 경험이 된 것 같습니다.
+                  <div className='project-text-box'>
+                    <b>TRPG(TableRollPlayingGame)을 Discord메신저에서 할 수 있도록
+                    각종 명령어와 탐사자 시트 및 주사위 기능을 구현하여 통화를 진행하면서
+                    게임을 할 수도 있고 채팅으로도 게임 진행이 가능하게 개발하였습니다</b>
+                    <p></p>
+                    TypeScript와 Prisma, Postgresql을 사용하여 개발을 진행하였으며,
+                    명령어를 구현해야 하다보니 소스 최적화에 대한 좋은 경험이 된 것 같습니다.
+                  </div>
+                  <div className='project-function-area'>
+                    <div className='project-description'>
+                      <div className='project-function-title'>
+                      ✔ 주요 기능
+                      </div>
+                      <div className='project-function-value'>
+                        탐사자 시트 제작 가능 ∙ 다양한 명령어, 다이스 기능 제공 ∙ DB를 사용한 템플릿 저장, 불러오기 
+                      </div>
+                    </div>
+                    <div className='project-description'>
+                      <div className='project-function-title'>
+                      ✔ Backend
+                      </div>
+                      <div className='project-function-value'>
+                        Node.js, Prisma
+                      </div>
+                    </div>
+                    <div className='project-description'>
+                      <div className='project-function-title'>
+                      ✔ Frontend
+                      </div>
+                      <div className='project-function-value'>
+                        TypeScript, discord.js
+                      </div>
+                    </div>
+                    <div className='project-description'>
+                      <div className='project-function-title'>
+                      ✔ Database
+                      </div>
+                      <div className='project-function-value'>
+                        PostgreSql
+                      </div>
+                    </div>
+                    <div className='project-description'>
+                      <div className='project-function-title'>
+                      ✔ Deployment
+                      </div>
+                      <div className='project-function-value'>
+                        Heroku
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -225,10 +344,49 @@ function App() {
                   </Carousel>
                 </div>
                 <div className='project-text-area'>
-                  <b>트위치라는 방송 플렛폼의 방송알림을 Discord 메신저에 올 수 있도록 하는 봇입니다.</b>
-                  기존에 방송알림을 해주는 Discord 봇이 있었으나 유로화로 바뀌면서 직접 개발하게 되었습니다.
-                  <p></p>
-                  Python과 트위치API를 사용하여 개발을 진행하였습니다. 
+                  <div className='project-text-box'>
+                    <b>트위치라는 방송 플렛폼의 방송알림을 Discord 메신저로 받을 수 있도록 하는 봇입니다.</b>
+                    기존에 방송알림을 해주는 Discord 봇이 있었으나 유로화로 바뀌면서 직접 개발하게 되었습니다.
+                    <p></p>
+                    자신이 원하는 방송인이 자신이 원하는 게임을 할 때만 알림을 받거나, 방송이 켜졌을 때만 알림을
+                    받는 등 여러가지 사용자가 원하는 정책으로 알림을 정할 수 있습니다.
+                    <p></p>
+                    Python과 트위치API를 사용하여 개발을 진행하였습니다. 
+                  </div>
+                  <div className='project-function-area'>
+                    <div className='project-description'>
+                      <div className='project-function-title'>
+                      ✔ 주요 기능
+                      </div>
+                      <div className='project-function-value'>
+                        특정 방송인의 방송알림 ∙ 특정 카테고리의 방송 진행 시 알림 ∙ 알림 정책의 세분화 가능
+                      </div>
+                    </div>
+                    <div className='project-description'>
+                      <div className='project-function-title'>
+                      ✔ Backend
+                      </div>
+                      <div className='project-function-value'>
+                        Python
+                      </div>
+                    </div>
+                    <div className='project-description'>
+                      <div className='project-function-title'>
+                      ✔ Frontend
+                      </div>
+                      <div className='project-function-value'>
+                        discord.js
+                      </div>
+                    </div>
+                    <div className='project-description'>
+                      <div className='project-function-title'>
+                      ✔ Deployment
+                      </div>
+                      <div className='project-function-value'>
+                        Heroku
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>  
