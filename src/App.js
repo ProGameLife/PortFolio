@@ -66,14 +66,14 @@ function App() {
               </a>
             </div>
           </div>
-        </header>
-        <div className='content-area'>
           <ul className='main-menu'>
             <li><a href='#aboutme'>About me</a></li>
             <li><a href='#skills'>Skills</a></li>
             <li><a href='#projects'>Projects</a></li>
             <li><a href='#career'>Career</a></li>
           </ul>
+        </header>
+        <div className='content-area'>
           <div id='aboutme' className='about-area'>
             <div className='main-title-area'>
               <p className='main-menu-title'>세상을 편하게 살기위해 노력하는 개발자</p>
@@ -142,7 +142,8 @@ function App() {
                 </div>
                 <ProjectTextArea 
                   className='project-text-area'
-                  mt={[32, 32, 32, 0]}>
+                  mt={[32, 32, 32, 0]}
+                  mb={[10, 10, 10, 0]}>
                   <div className='project-text-box'>
                     <b>보고싶은 유튜브의 새 영상을 평소에 자주 사용하는 메신저인 Discord를 통해서
                     알림을 받을 수 있고 바로 영상재생이 가능하게 해주는 봇입니다.</b> 데이터베이스를

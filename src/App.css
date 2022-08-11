@@ -2,6 +2,7 @@
   box-sizing: border-box;
   scrollbar-width: thin;
   -ms-overflow-style: none;
+  scroll-behavior: smooth;
 }
 
  ::-webkit-scrollbar {
@@ -48,6 +49,7 @@ div, span, h1, h2, b, p{
   text-align: center;
   padding: 30px 30px 45px;
   overflow: auto;
+  align-items: center;
   background-color: #373942;
 }
 
@@ -241,6 +243,13 @@ div, span, h1, h2, b, p{
   text-decoration: none;
 }
 
+.main-menu > li {
+  padding: 5px 0px 5px 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #efefef;
+  font-size: 20px;
+}
+
 .value-area > p > ul {
   padding-left: 18px;
   margin: 0px;
@@ -289,6 +298,7 @@ div, span, h1, h2, b, p{
 .project-text-area {
   word-wrap: break-all;
   width: 400px;
+  margin: 10px;
 }
 
 .project-text-box {
@@ -383,10 +393,12 @@ div, span, h1, h2, b, p{
 }
 
 .main-menu {
-  position: absolute;
+  display: flex;
+  flex-direction: column;
   padding: 15px 0;
   width: 100px;
-  right: -10px;
+  text-align: center;
+  top: 10%;
   border-radius: 35px;
   background-color: #373942;
   list-style: none;
