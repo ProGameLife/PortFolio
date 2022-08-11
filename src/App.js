@@ -57,14 +57,15 @@ function App() {
                 <p className='value'>ISFP</p>
               </li>
             </ul>
-            <div className='header-img-link'>
+            <ProjectContentBox className='header-img-link'
+            flexDirection={['column', 'column', 'column', 'row']}>
               <a href='https://github.com/ProGameLife'>
                 <img className='social-img' src={imgB} />
               </a>
               <a href='mailto:chssha1538@gmail.com'>
                 <img className='social-img' src={imgC} />
               </a>
-            </div>
+            </ProjectContentBox>
           </div>
           <ul className='main-menu'>
             <li><a href='#aboutme'>About me</a></li>

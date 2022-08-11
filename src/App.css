@@ -109,7 +109,7 @@ div, span, h1, h2, b, p{
 .value {
   text-align: center;
   font-size: 18px;
-  line-height: 1.65em;
+  line-height: 1em;
   color: #fffEEE;
   font-family: 'Poppins', Helvetica, sans-serif;
 }
@@ -396,7 +396,8 @@ div, span, h1, h2, b, p{
 .main-menu {
   display: flex;
   flex-direction: column;
-  padding: 15px 0;
+  padding: 0;
+  margin: 0;
   width: 100px;
   text-align: center;
   top: 10%;
