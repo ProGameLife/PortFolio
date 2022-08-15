@@ -197,6 +197,15 @@ function App() {
                         Heroku
                       </div>
                     </div>
+                    <div className='project-description'>
+                      <div className='project-function-title'>
+                      ✔ Github
+                      </div>
+                      <div className='project-function-value'>
+                        <a href='https://github.com/ProGameLife/New-Video-Bot'>
+                          https://github.com/ProGameLife/New-Video-Bot</a>
+                      </div>
+                    </div>
                   </div>
                 </ProjectTextArea>
               </ProjectContentBox>
@@ -264,6 +273,15 @@ function App() {
                       </div>
                       <div className='project-function-value'>
                         Heroku
+                      </div>
+                    </div>
+                    <div className='project-description'>
+                      <div className='project-function-title'>
+                      ✔ Github
+                      </div>
+                      <div className='project-function-value'>
+                        <a href='https://github.com/ProGameLife/ISEDOLE-DISCORD-BOT'>
+                          https://github.com/ProGameLife/ISEDOLE-DISCORD-BOT</a>
                       </div>
                     </div>
                   </div>
@@ -349,6 +367,15 @@ function App() {
                         Heroku
                       </div>
                     </div>
+                    <div className='project-description'>
+                      <div className='project-function-title'>
+                      ✔ Github
+                      </div>
+                      <div className='project-function-value'>
+                        <a href='https://github.com/ProGameLife/TRPG_BOT'>
+                          https://github.com/ProGameLife/TRPG_BOT</a>
+                      </div>
+                    </div>
                   </div>
                 </ProjectTextArea>
               </ProjectContentBox>
@@ -417,6 +444,15 @@ function App() {
                       </div>
                       <div className='project-function-value'>
                         Heroku
+                      </div>
+                    </div>
+                    <div className='project-description'>
+                      <div className='project-function-title'>
+                      ✔ Github
+                      </div>
+                      <div className='project-function-value'>
+                        <a href='https://github.com/ProGameLife/Noty-Bot'>
+                          https://github.com/ProGameLife/Noty-Bot</a>
                       </div>
                     </div>
                   </div>
