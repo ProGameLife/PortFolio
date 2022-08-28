@@ -11,6 +11,7 @@ import img_trbot_2 from './images/trbot-2.png'
 import img_trbot_3 from './images/trbot-3.png'
 import img_frontend from './images/frontend.png'
 import img_backend from './images/backend.png'
+import img_database from './images/db.png'
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
@@ -99,8 +100,7 @@ function App() {
             </div>
             <SkillsArea 
               className='skills-area' 
-              flexDirection={['column', 'column', 'column', 'row']}
-            >
+              flexDirection={['column', 'column', 'column', 'row']}>
               <div className='frontend-area'>
                 <div className='skill-title'>Frontend</div>
                 <img alt='frontend' src={img_frontend}/>
@@ -108,6 +108,10 @@ function App() {
               <div className='backend-area'>
                 <div className='skill-title'>Backtend</div>
                 <img alt='backend' src={img_backend}/>
+              </div>
+              <div className='db-area'>
+                <div className='skill-title'>Database</div>
+                <img alt='database' src={img_database}/>
               </div>
             </SkillsArea>
           </div>
