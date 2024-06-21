@@ -44,7 +44,7 @@ function App() {
             <h4>Backtend Developer</h4>
           </div>
           <div className='header-photo'>
-            <img src={imgA} />
+            <img src={imgA} alt='face'/>
           </div>
           <div className='header-social'>
             <ul>
@@ -61,10 +61,10 @@ function App() {
             <ProjectContentBox className='header-img-link'
             flexDirection={['column', 'column', 'column', 'row']}>
               <a href='https://github.com/ProGameLife'>
-                <img className='social-img' src={imgB} />
+                <img className='social-img' src={imgB} alt=''/>
               </a>
               <a href='mailto:chssha1538@gmail.com'>
-                <img className='social-img' src={imgC} />
+                <img className='social-img' src={imgC} alt=''/>
               </a>
             </ProjectContentBox>
           </div>
@@ -78,18 +78,10 @@ function App() {
         <div className='content-area'>
           <div id='aboutme' className='about-area'>
             <div className='main-title-area'>
-              <p className='main-menu-title'>세상을 편하게 살기위해 노력하는 개발자</p>
+              <p className='main-menu-title'>다재다능한 사람이 되기위해 노력하는 개발자</p>
               <br />
               <p className='main-menu-sub-title'>Backend 개발자 포트폴리오</p>
             </div>
-            {/* <div className='aboutme-center'>
-              저는 평소에 백엔드 개발을 진행하였으며 Node.js와 TypeScript를
-              주로 다루었습니다.<br />
-              해당 포트폴리오 페이지는 저의 소개글이자, 개인 프로젝트 등 개발일지를<br />
-              기록하기 위해 만들어진 저의 웹페이지 입니다.<br />
-              저에게 궁금하신 사항은 언제든지 연락 부탁드립니다.<br />
-              감사합니다 !<br />
-            </div> */}
             <a href='#skills' className='more-view-button'>
               <HiOutlineChevronDoubleDown size={46} color={'#fff'}/>
             </a>
@@ -135,13 +127,13 @@ function App() {
                     swipeable={false} 
                     infiniteLoop={true} >
                     <div>
-                        <img src={img_kiri_1} />
+                        <img src={img_kiri_1} alt=''/>
                     </div>
                     <div>
-                        <img src={img_kiri_2} />
+                        <img src={img_kiri_2} alt=''/>
                     </div>
                     <div>
-                        <img src={img_kiri_3} />
+                        <img src={img_kiri_3} alt=''/>
                     </div>              
                   </Carousel>
                 </div>
@@ -230,7 +222,7 @@ function App() {
                     swipeable={false} 
                     infiniteLoop={true} >
                     <div>
-                        <img src={img_croll_1} />
+                        <img src={img_croll_1} alt=''/>
                     </div>
                   </Carousel>
                 </div>
@@ -309,14 +301,14 @@ function App() {
                     infiniteLoop={true}
                     autoFocus={true} >
                     <div>
-                        <img className='project-img' src={img_trbot_1} />
+                        <img className='project-img' src={img_trbot_1} alt=''/>
                     </div>
                     <div>
-                        <img className='project-img' src={img_trbot_2} />
+                        <img className='project-img' src={img_trbot_2} alt=''/>
                     </div>
                     <div>
-                        <img className='project-img' src={img_trbot_3} />
-                    </div>         
+                        <img className='project-img' src={img_trbot_3} alt=''/>
+                    </div>
                   </Carousel>
                 </div>
                 <ProjectTextArea 
@@ -401,7 +393,7 @@ function App() {
                     infiniteLoop={true}
                     autoFocus={true}>
                     <div>
-                        <img className='project-img' src={img_alrim_1} />
+                        <img className='project-img' src={img_alrim_1} alt=''/>
                     </div>
                   </Carousel>
                 </div>
