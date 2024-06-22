@@ -192,24 +192,71 @@ div, span, h1, h2, b, p{
 
 .company-area {
   display: flex;
-  justify-content: flex-start;
-  flex-flow: row nowrap;
+  flex-direction: column;
   align-items: flex-start;
-  background-color: #586065;
-  padding-bottom: 36px;
+  background-color: #373942;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .value-area {
-  margin-left: 50px;
-  padding-left: 30px;
+  width: 100%;
+}
+
+.value-area > h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.value-area > p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.value-area > p > ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.details {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+.project {
+  margin-bottom: 0px;
+}
+
+.project b {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.project ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.project ul li {
+  margin-bottom: 5px;
 }
 
 .company-explanation {
   padding-bottom: 10px;
   margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.5;
 }
+
 .career-s-title {
-  list-style: disclosure-closed;
+  list-style: none;
+  font-weight: bold;
+  margin: 15px 0 5px;
 }
 
 .menu-title {
@@ -231,7 +278,12 @@ div, span, h1, h2, b, p{
   border-bottom: 1px solid #888;
   padding: 20px 30px 20px 18px; 
   margin: 0px 0px 0px 0px;
+  background-color: #586065;
   /* box-shadow: inset 2px 2px #000; */
+}
+
+.career-area {
+background-color: #586065;
 }
 
 .content-area > div > ul > li {
@@ -367,15 +419,16 @@ div, span, h1, h2, b, p{
 }
 
 .skill-title {
+  text-align: center;
   border-bottom: 1px solid #333;
   padding-bottom: 0.5rem;
   margin-bottom: 1.5rem;
   font-weight: 700;
   font-size: 1.5rem;
-  color: #000;
+  color: #fff;
 }
 
-.backend-area {
+/* .backend-area {
   width: 17rem;
   height: inherit;
   flex-shrink: 0;
@@ -403,6 +456,9 @@ div, span, h1, h2, b, p{
   margin: 0 auto 2rem;
   border-radius: 1rem;
   background-color: #fff;
+} */
+.skill-text-area {
+  text-align: center;
 }
 
 .main-menu {
