@@ -10,11 +10,6 @@ const TitleArea = styled.div`
   margin-bottom: 40px;
 `;
 
-const CareerSummary = styled.div`
-  font-size: 18px;
-  margin-bottom: 20px;
-`;
-
 const Timeline = styled.div`
   position: relative;
   margin: 20px 0;
@@ -39,7 +34,7 @@ const TimelineItem = styled.div`
   width: 30%;
 
   &:nth-child(odd) {
-    left: 12%;
+    left: 11%;
   }
 
   &:nth-child(even) {

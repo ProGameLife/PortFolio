@@ -18,18 +18,17 @@ const HeaderContainer = styled.header`
   background-color: #373942;
 `;
 
-const HeaderTitle = styled.p`
+const HeaderTitle = styled.h1`
   text-align: center;
   font-size: 35px;
-  letter-spacing: 2px;
-  font-weight: bolder;
-  color: #ffeb3b;
+  letter-spacing: 2px
+  color: #e2e8f0;
   margin-top: 10px;
   font-family: 'Poppins', Helvetica, sans-serif;
   margin-bottom: 10px;
 `;
 
-const HeaderSubtitle = styled.h4`
+const HeaderSubtitle = styled.p`
   padding-top: 10px;
   margin-top: 0;
   color: #ffeb3b;
