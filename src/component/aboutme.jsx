@@ -41,7 +41,7 @@ const AboutMe = () => (
     <TitleArea>
       <MainMenuTitle>다재다능한 사람이 되기위해 노력하는 개발자</MainMenuTitle>
       <br />
-      <MainMenuSubtitle>Backend 개발자 포트폴리오</MainMenuSubtitle>
+      <MainMenuSubtitle>Software Engineer 개발자 포트폴리오</MainMenuSubtitle>
     </TitleArea>
   </AboutContainer>
 );
